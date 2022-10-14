@@ -78,18 +78,28 @@
 									</header>
 									<p>Currently I am a researcher at Eurecat, The Technology Centre of Catalonia. I work within the <a href="https://eurecat.org/en/field-of-knowledge/applied-artificial-intelligence/" target="_blank">Applied Artificial Intelligence Unit</a> where I participate in different public and private projects.</p>
 									
+									
 									<a href="https://eurecat.org/en" target="_blank" class="image">
 										<img src="https://eurecat.org/wp-content/uploads/2016/04/Eurecat_Logo_retina.jpg" alt="Eurecat logo" data-position="center center" />
 									</a>
 									</br></br>
 									Actividades públicas:
+									<li><a href="https://youtu.be/Jx-Zh2jzWjU?t=2400" target="_blank">European Factory Platform (EFPF) - Open Call Pitching Event</a>: Presentation of the BBI4.0 projects results. Out presentation starts at minute 40. </li>
+									<div id="ytplayer"></div>
 									<li><a href="https://www.advancedfactories.com/agenda-sessions/calidad-e-inteligencia-artificial-20210609/" target="_blank" >Calidad e inteligencia artificial</a>, Presentación en el <i>Industry 4.0 Congress</i>, dentro del <b>Advanced Factories 2021</b> </li>
 									<li><a href="https://ccia2021.udl.cat/" target="_blank">CCIA 21</a> where I presented our poster called <b>Cutting Tool Wearing Identification Through Predictive Maintenance and Its Impact on Surface Quality</b> available on <a href="https://ebooks.iospress.nl/volumearticle/57721" target="_blank">actes del congrés</a>.</li>
+									
 									</br>
+									
 									Otros:
 									<li><a href="https://www.efpf.org/open-call-stories" target="_blank">EFPF: Partner Stories</a>: Search for Eurecat Story. </li>
+									
 								</div>
+								
 							</section>
+							
+
+						
 
 						<!-- One -->
 							<section id="one">
@@ -267,4 +277,26 @@
 			<script src="assets/js/main.js"></script>
 
 	</body>
+	
+
 </html>
+
+
+<script>
+  // Load the IFrame Player API code asynchronously.
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/player_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  // Replace the 'ytplayer' element with an <iframe> and
+  // YouTube player after the API code downloads.
+  var player;
+  function onYouTubePlayerAPIReady() {
+	player = new YT.Player('ytplayer', {
+	  height: '360',
+	  width: '640',
+	  videoId: 'Jx-Zh2jzWjU'
+	});
+  }
+</script>
